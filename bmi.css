@@ -1,0 +1,159 @@
+body { 
+    background: dodgerblue;
+    transition: 300ms;
+}
+
+.main {
+    background-color: white;
+    text-align: center;
+    max-width: 40vw;
+    width: 40vw;
+    border-radius: 10px;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+    position: absolute;
+    transition: 300ms;
+    margin: auto;
+    display:flex;
+    padding: 0;
+    justify-content: center;
+}
+
+.expand {
+    max-width: 85vw;
+    width: 85vw;
+}
+
+.buttons {
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    width: 40vw;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 6vmin;
+    color: rgb(1, 112, 223);
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4vmin;
+    margin: 1vh;
+    color: rgb(1, 112, 223);
+}
+
+
+input {
+    font-size: 3vmin; 
+    margin: 1vh; 
+    clear: both;
+    text-align: right;
+    max-width:  50%;
+    font-family: monospace;
+}
+
+label {
+    font-size: 3vmin;
+}
+
+button {
+    font-size: 4vmin;  
+    margin: 1vh;
+}
+
+#output{
+    /* text-align: center; */
+    /* width: 25vw; */
+    /* width: fit-content; */
+    margin: auto;
+    font-family: monospace;
+    color: dodgerblue;
+    font-size: 2.5vmin; 
+    /* max-height: 90vh; */
+}
+
+.result {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+select {
+    font-size: 3vmin; 
+    margin: 1vh; 
+    width: 10vw;
+}
+
+#out1 {
+    overflow-y: auto;
+    max-height: 36vh; 
+    margin: 2vh;
+    font-size: 2.75vmin; 
+    height: auto
+}
+
+.result {
+    background-color: rgba(255, 255, 255, 0);
+    transition: 200ms;
+    margin: 0;
+}
+
+.visible {
+    width: 65vw;
+    opacity: 1;
+    overflow-y: auto;
+}
+
+.invisible {
+    width: 0; height: 0;
+    opacity: 0;
+    overflow: hidden;
+    overflow-y: hidden;
+}
+
+
+.description {
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+    font-size: 2.75vmin;  
+}
+
+
+img {
+    /* float: right; */
+    /* width : 25vmin; */
+    transition: 200ms;
+    height: 45vh;
+    margin: 2.5vh 0 0 0;
+}
+
+label {
+    display:block;
+}
+
+a {
+    background-color: white;
+    color: rgb(1, 112, 223);
+    transition: 200ms;
+    padding: 2px 0;
+}
+
+a:visited {
+    color: rgb(1, 112, 223);
+}
+
+a:hover{
+    background-color: dodgerblue;
+    color: white;
+    transition: 200ms;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 2px 5px;
+}

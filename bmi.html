@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./ico.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./bmi.css">
+    <title>Project: BinCalc</title>
+</head>
+<body>
+    <div class="main">
+        <div class="buttons">
+            <h1>Body Mass Index</h1>
+            <br>
+            <label for="height_input">Enter your height:</label>
+            <input type="number" id="height_input"  onclick="this.select();">
+            <select id="height_units" > 
+                <option value="m">cm</option>
+                <option value="i">inches</option>
+            </select>
+            <br>
+            <label for="weight_input">Enter your weight:</label>
+            <input type="number" id="weight_input"  onclick="this.select();">
+            <select id="weight_units" > 
+                <option value="kg">kg</option>
+                <option value="lbs">lbs</option>
+            </select>
+            <br>
+            <div class="buttons">
+                <button id="btn">Get BMI Value</button>
+            </div>
+    
+            <br>
+           
+            <div class="description">
+                <p>
+                    Body mass index (BMI) is a person’s weight in kilograms divided by the square of height in meters. BMI is an inexpensive and easy screening method for weight category—underweight, healthy weight, overweight, and obesity.
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Body_mass_index">Learn more</a>
+            </div>
+            <br>
+        </div>
+
+        <div class="result invisible">
+            <div class="cont">
+                <img src = "./w3.jpg" alt = "BMI picture" id="picture" class="invisible"></img>
+                <h2 id = "out2">Result</h2>
+            </div>
+
+            <div id="output invisible">
+                <p id = 'out1'></p>
+                <br>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <script type="text/javascript" src="bmi.js"></script>
+    
+</body>
+</html>
